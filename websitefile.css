@@ -1,0 +1,132 @@
+div.info{
+   position: -webkit-sticky;
+   position: sticky;
+    top: 0;
+    background-color: palevioletred;
+    border: 2px solid black;
+   width: 100vw;
+   height: 15vh;
+   box-shadow: black;
+   font-size: 50px;
+   color: white;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+
+}
+
+#home{
+    background-color: purple;
+    background-repeat: no-repeat;
+    background-size: 77%;
+    background-position: left;
+    color: black;
+    font: optional;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+#me{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: purple;
+    
+}
+
+
+.written-about-me{
+    border: black 2px solid;
+    font-size: 25px;
+    flex: 50%;
+    
+    
+}
+.images{
+    flex: 50%;
+}
+
+#project{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+#experience{
+    font-size: 25px;
+    background-color: purple;
+}
+
+#contact{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    height: auto;
+    background-color: purple;
+}
+
+
+
+.never-forget{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAGnpZBLnhlXY1ZBz2CFSG21tTu1uNmCJy_g&usqp=CAU);
+width: fit-content;
+}
+
+
+.buttons a {
+    font-size: 16px;
+  }
+  .buttons a:hover {
+    cursor:pointer; 
+    font-size: 16px;
+  }
+
+#enter{
+    display: inline;
+    margin-top: 20%;
+
+}
+
+#home img{
+    height: 72vh;
+    margin-left: 50%;
+}
+
+.home{
+    box-shadow: black;
+    padding: 10px;
+    font-size: 10px;
+    margin-left: 30%;
+}
+
+.about{
+    box-shadow: black;
+    padding: 10px;
+    
+}
+
+.experience{
+    box-shadow: black;
+    padding: 10px;
+    
+}
+
+.projects{
+    box-shadow: black;
+    padding: 10px;
+    
+}
+
+.skills{
+    box-shadow: black;
+    padding: 10px;
+    
+}
+
+.contact{
+    box-shadow: black;
+    padding: 10px;
+    
+}
+main{
+    width: 100%;
+}

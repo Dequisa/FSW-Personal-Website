@@ -27,16 +27,16 @@
 
 
 
-function off(){
-    var power1 = document.querySelector(".main");
-    var power2 = document.querySelector("#project");
-    var power3 = document.querySelector(".container");
-    var power4 = document.querySelector("#contact");
-    power1.classList.toggle("dark-mode");
-    power2.classList.toggle("dark-mode");
-    power3.classList.toggle("dark-mode");
-    power4.classList.toggle("dark-mode");
-}
+// function off(){
+//     var power1 = document.querySelector(".main");
+//     var power2 = document.querySelector("#project");
+//     var power3 = document.querySelector(".container");
+//     var power4 = document.querySelector("#contact");
+//     power1.classList.toggle("dark-mode");
+//     power2.classList.toggle("dark-mode");
+//     power3.classList.toggle("dark-mode");
+//     power4.classList.toggle("dark-mode");
+// }
 // let button = domcument.querySelector("#on")
 // button.addEventListener("click",()=>{
 //     var header = document.querySelector(".head");
@@ -47,7 +47,7 @@ function off(){
 
 
 
-toggle()
+
 // function myFunction() {
 //     if (window.pageYOffset > sticky) {
 //       header.classList.add("sticky");
@@ -55,3 +55,38 @@ toggle()
 //       header.classList.remove("sticky");
 //     }
 //   }
+
+
+function viewPoint() {
+
+    document.getElementById("#home").style.display = "block";
+    document.getElementById("#me").style.display = "none";
+    document.getElementById("#experience").style.display = "none";
+    document.getElementById("#project").style.display = "none";
+    document.getElementById("#container").style.display = "none";
+    document.getElementById("#contact").style.display = "none";
+
+}
+
+var divs = ["home","me","experience","container","contact"];
+var visibleDivId = null;
+function divVisibility(divId) {
+  if(visibleDivId === divId) {
+    visibleDivId = null;
+  } else {
+    visibleDivId = divId;
+  }
+  hideNonVisibleDivs();
+}
+function hideNonVisibleDivs() {
+  var i, divId, div;
+  for(i = 0; i < divs.length; i++) {
+    divId = divs[i];
+    div = document.getElementById(divId);
+    if(visibleDivId === divId) {
+      div.style.display = "block";
+    } else {
+      div.style.display = "none";
+    }
+  }
+}
